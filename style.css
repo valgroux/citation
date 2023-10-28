@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background-color: #212632;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter';
+}
+
+.container{
+    background-color: #303A49;
+    width: 40%;
+    padding: 40px;
+    position: relative;
+}
+
+.advice{
+    color: #56FFAE;
+    padding:16px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.quote{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container__trait{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 24px 0;
+}
+
+.line{
+    flex: 1;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 2px;
+    opacity: .3;
+}
+
+.symbol{
+    background-image: url('./images/quote.png');
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+}
+
+.container__button{
+    width: 48px;
+    height: 48px;
+    background-color: #56FFAE;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -24px;
+    left:50%;
+    right: 50%;
+    transform: translateX(-50%);
+    background-image: url('./images/gift.svg');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media (max-width: 425px) {
+    .container{
+        width: 90%;
+    }
+}
